@@ -7,7 +7,8 @@ public class Employee {
     private final String name;
     private double salary;
     private int department;
-    public static int id;
+    private  static int counter = 0;
+    public int id;
 
 
 
@@ -15,12 +16,12 @@ public class Employee {
         this.name = name;
         this.salary = salary;
         this.department = department;
-        id++;
+        this.id = counter++;
     }
 
 
     public static int getId() {
-        return id;
+        return counter;
     }
 
     public String getName() {

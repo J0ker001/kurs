@@ -7,10 +7,8 @@ public class Employee {
     private final String name;
     private double salary;
     private int department;
-    private  static int counter = 0;
+    private static int counter = 0;
     public int id;
-
-
 
     public Employee(String name, double salary, int department) {
         this.name = name;
@@ -18,7 +16,6 @@ public class Employee {
         this.department = department;
         this.id = counter++;
     }
-
 
     public static int getId() {
         return counter;
@@ -70,6 +67,5 @@ public class Employee {
         return Objects.hash(name,
                 salary, department);
     }
-
 }
 

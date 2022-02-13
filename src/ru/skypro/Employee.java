@@ -17,8 +17,8 @@ public class Employee {
         this.id = counter++;
     }
 
-    public static int getId() {
-        return counter;
+    public  int getId() {
+        return id;
     }
 
     public String getName() {
